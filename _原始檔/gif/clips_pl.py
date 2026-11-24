@@ -5,6 +5,7 @@ M="/Users/ningchang/Library/Mobile Documents/com~apple~CloudDocs/○煦暖曆/01
 FPS=15
 # name: (src, t0, t1, speed, cy, rotate, hdr, out_w, out_h)
 C={
+ 'f_box':    (M+'大C_B/影片檔_調色對齊麻豆/C3569.mp4', 1.2, 11.8, 1.6, 0.5, '', False, 1080, 1080),
  'f_flat':   (M+'丁丁_新拍_1110_調色對齊麻豆/C0148.mp4', 16.5, 23.5, 1.3, 0.5, 'transpose=2', False, 1080, 1350),
  'f_flip':   (M+'麻豆_影片_0812/C0285.mp4', 12.8, 19.0, 1.4, 0.5, '', False, 1080, 1350),
  'f_window': (M+'阿寧_出外景/IMG_1137.MOV', 2.6, 9.0, 1.2, 0.45, '', True, 1080, 1350),
