@@ -1,6 +1,7 @@
 """手帳落地頁 page.html（照旅行 v28 規範），2026-11-24。共用樣式 base.css 來自旅行頁，手帳專屬的放在 EXTRA。"""
 css = open('base.css').read()
 EXTRA = '''
+.cd .tk p mark{color:inherit;background:linear-gradient(100deg,transparent 2%,rgba(248,222,96,.72) 4%,rgba(246,214,80,.6) 60%,rgba(248,222,96,.75) 96%,transparent 98%) no-repeat 0 72%/100% 58%;padding:0 3px;margin:0 -1px;border-radius:2px 5px 3px 6px}
 .cd .tk .route b{font-size:15px}
 #s05{background:var(--night);padding:36px 16px 28px}
 #s05 .eyebrow{color:#E9A493}#s05 h2{color:#fff;margin-top:10px}#s05 .lead{color:#C9C1B5;margin-top:8px}
@@ -33,13 +34,13 @@ EXTRA = '''
 
 P = [
  dict(n='01', who='行程控上班族', h='開會、待辦、生活瑣事，都寫在同一頁', k1='寫在', v1='週計畫', k2='用來', v2='排行程',
-      p='左頁排行程，右頁畫進度，<br>每打一個勾都好療癒。', img='q1'),
+      p='左頁<mark>排行程</mark>，右頁<mark>畫進度</mark>，<br>每打一個勾都<mark>好療癒</mark>。', img='q1'),
  dict(n='02', who='想更懂自己的人', h='每個月一個問題，一年後更懂自己', k1='寫在', v1='每月覺察', k2='用來', v2='認識自己',
-      p='12 個自我覺察主題，<br>跟著提問寫，不怕空白頁。', img='q2'),
+      p='<mark>12 個自我覺察主題</mark>，<br>跟著提問寫，<mark>不怕空白頁</mark>。', img='q2'),
  dict(n='03', who='交換禮物', h='禮物預算一千，送一本陪他一整年的手帳', k1='附贈', v1='手帳袋', k2='送給', v2='同事朋友',
-      p='不用猜他喜歡什麼，<br>一年的空白，留給他自己寫。', img='q3'),
+      p='<mark>不用猜</mark>他喜歡什麼，<br>一年的空白，<mark>留給他自己寫</mark>。', img='q3'),
  dict(n='04', who='聖誕禮物', h='送一個讓他寫滿 2027 的禮物', k1='寫在', v1='願景板', k2='用來', v2='許願明年',
-      p='別人的禮物拆完就收起來，<br>這本他會每天打開，<br>寫下自己的一整年！', img='q4'),
+      p='別人的禮物拆完就收起來，<br>這本他會<mark>每天打開</mark>，<br>寫下<mark>自己的一整年</mark>！', img='q4'),
 ]
 cards = ''.join(f'''<div class="cd"><div class="ph" style="background-image:url(img/{x["img"]}.jpg)"><div class="ov"><div class="no en">NO. {x["n"]}</div><div class="who">{x["who"]}</div><h3>{x["h"]}</h3></div></div>
 <div class="tk"><div class="route"><div>{x["k1"]}<b>{x["v1"]}</b></div><span class="pl">✈</span><div>{x["k2"]}<b>{x["v2"]}</b></div></div><div><p>{x["p"]}</p></div></div></div>''' for x in P)
