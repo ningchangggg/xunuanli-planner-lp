@@ -73,19 +73,6 @@ body = f'''
   <div><div class="n">12</div><div class="c">個自我覺察主題</div></div>
   <div><div class="n">4<small>色</small></div><div class="c">霧面皮革封面</div></div>
 </section>
-<section id="s05">
-  <div class="eyebrow en">INSIDE THE JOURNAL</div>
-  <h2>一本手帳，六種寫法</h2>
-  <div class="lead">從一天、一週、一個月，寫到一整年。</div>
-  <div class="ov6">
-    <figure><img src="img/t_week.jpg"><figcaption>週計畫</figcaption></figure>
-    <figure><img src="img/t_grid.jpg"><figcaption>方格頁</figcaption></figure>
-    <figure class="w"><img src="img/t_month.jpg"><figcaption>月計畫</figcaption></figure>
-    <figure><img src="img/t_reflect.jpg"><figcaption>每月覺察</figcaption></figure>
-    <figure><img src="img/t_vision.jpg"><figcaption>顯化願景板</figcaption></figure>
-    <figure class="w"><img src="img/t_year.jpg"><figcaption>年計畫甘特圖</figcaption></figure>
-  </div>
-</section>
 {how(1, 's05a', '時間、待辦、生活瑣事，<br>一週排在同一頁', '左頁一天一格，寫下開會時間、<br>打勾完成的事，還有今天的小事。', 'hw_week', 'pt', '寫週計畫', 'WEEKLY')}
 {how(2, 's05b', '右頁方格，<br>畫進度也畫心情', '用螢光筆畫甘特圖追進度，<br>空白處畫一杯咖啡、一朵花。', 'hw_grid', 'pt', '畫方格頁', 'GRID')}
 {how(3, 's06', '月計畫攤開，<br>整個月一眼看完', '精裝 180 度平攤，<br>寫到中間也不卡手。', 'hw_month', 'ls', '寫月計畫', 'MONTHLY', '整個跨頁攤平，打勾、圈起來、螢光筆都放得下')}
