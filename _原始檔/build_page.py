@@ -25,7 +25,7 @@ EXTRA = '''
 .q12 div:before{content:"";position:absolute;right:10px;top:-5px;width:34px;height:11px;background:var(--c);opacity:.55;transform:rotate(-4deg)}
 .q12 b{display:block;font-family:Helvetica,Arial;font-weight:400;font-size:10px;letter-spacing:.2em;color:var(--taupe)}
 .q12 span{display:block;font-size:14.5px;color:var(--ink);margin-top:3px;letter-spacing:.04em}
-#s10 .ph{background-image:url(img/four.jpg)}
+#s10 .ph{background-image:url(gif/clips/f_style/001.jpg)}
 #s11 .ph{background-image:url(img/spec.jpg)}
 #s06x .shade{position:absolute;left:0;right:0;top:0;height:200px;background:linear-gradient(rgba(18,14,10,.5),transparent)}
 #s06x .tx{top:28px}#s06x .tx .a{color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.5)}
@@ -100,17 +100,11 @@ body = f'''
   <div class="ph" data-clip="f_flip" style="background-image:url(gif/clips/f_flip/001.jpg)"></div><div class="shade"></div>
   <div class="tx"><div class="a">翻開這一年，<br>先寫給自己</div></div>
 </section>
-<section id="s09">
-  <div class="eyebrow en">12 MONTHS</div>
-  <h2>一年十二個提問</h2>
-  <div class="lead">每個月一張照片、一個主題，跟著寫就好。</div>
-  <div class="q12">{q12}</div>
-</section>
 <section id="s10">
-  <div class="eyebrow">四種封面</div>
-  <h2>四種顏色，陪他的每一天</h2>
-  <div class="lead">霧面皮革，開窗款與經典素面款。</div>
-  <div class="ph"></div>
+  <div class="eyebrow">封面款式</div>
+  <h2>四種顏色 x 兩種款式</h2>
+  <div class="lead">霧面耐髒皮革，兩種風格封面</div>
+  <div class="ph" data-clip="f_style" style="background-image:url(gif/clips/f_style/001.jpg)"></div>
   <div class="sw">
     <div><i style="background:#E9E3D6"></i>晨曦米白<small>CREAM</small></div>
     <div><i style="background:#C68E5C"></i>沙丘暖杏<small>APRICOT</small></div>
