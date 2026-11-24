@@ -94,7 +94,7 @@ body = f'''
 {how(6, 's06c', '顯化願景板，<br>把想要的一年貼出來', '寫下願望、貼上照片，<br>每次翻開都記得為什麼出發。', 'hw_vision', 'pt', '願景板', 'VISION BOARD')}
 <section id="s07" class="full">
   <div class="ph" data-clip="f_window" style="background-image:url(gif/clips/f_window/001.jpg)"></div><div class="shade"></div>
-  <div class="tx"><div class="a">封面三格窗，<br>框住每天的小風景</div><div class="b">開窗封面可以換卡片，<br>也能拿起來，框住眼前的生活。</div></div>
+  <div class="tx"><div class="a">封面三格窗，<br>框住每天的小風景</div><div class="b">開窗封面可以換卡片，<br>把喜歡的照片推進去，就換好了。</div></div>
 </section>
 <section id="s08" class="full">
   <div class="ph" data-clip="f_flip" style="background-image:url(gif/clips/f_flip/001.jpg)"></div><div class="shade"></div>
