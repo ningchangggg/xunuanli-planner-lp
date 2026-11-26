@@ -41,8 +41,8 @@ EXTRA = r'''
 .inbox ol{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 14px;margin-top:10px}
 .inbox li{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--ink);letter-spacing:.04em}
 .inbox li b{flex:none;width:22px;height:22px;border-radius:50%;border:1px solid var(--brick);color:var(--brick);font-family:"Helvetica Neue",Arial;font-size:11px;display:flex;align-items:center;justify-content:center}
-.inbox .bag{display:flex;gap:12px;align-items:center;margin-top:14px;padding-top:12px;border-top:1px dashed #D9CFC2}
-.inbox .bag .im{width:118px;height:88px;flex:none;background:url(img/n_bag.jpg) center/cover;border-radius:3px}
+.inbox .bag{margin-top:14px;padding-top:14px;border-top:1px dashed #D9CFC2}
+.inbox .bag .im{width:100%;height:218px;background:url(img/n_bag.jpg) center 55%/cover;border-radius:4px;box-shadow:0 4px 12px rgba(30,27,25,.18)}.inbox .bag .tx{display:flex;align-items:baseline;gap:12px;margin-top:12px}.inbox .bag .tx>div:last-child{flex:1}
 .inbox .bag .k{font-size:11.5px;color:var(--brick);letter-spacing:.2em}
 .inbox .bag .v{font-size:15.5px;color:var(--ink);margin-top:2px;letter-spacing:.06em}
 .inbox .bag .s{font-size:12.5px;color:var(--text);margin-top:3px;line-height:1.6}
@@ -106,16 +106,16 @@ def note(src, x, y, w, rot, lb, c='--tape'):
 P = [
  dict(n='01', who='行程控上班族', c='--tape', h='開會、待辦、生活瑣事，都寫在同一頁', k1='寫在', v1='週計畫', k2='用來', v2='排行程',
       p='左頁<mark>排行程</mark>，右頁<mark>畫進度</mark>，<br>每打一個勾都<mark>好療癒</mark>。', img='img/q1.jpg',
-      note=note('img/n_week.jpg', 250, 16, 172, 4, '她的週計畫'),),
+      note=note('img/n_week.jpg', 288, 14, 136, 4, '她的週計畫'),),
  dict(n='02', who='想更懂自己的人', c='--tape2', h='每月覺察引導，<br>不只忙碌安排生活、也靜心傾聽自己', k1='寫在', v1='每月覺察', k2='用來', v2='認識自己',
       p='<mark>12 個自我覺察主題</mark>，<br>跟著提問寫，<mark>不怕不知道怎麼寫</mark>。', img='img/q2.jpg',
       note=note('img/n_reflect.jpg', 12, 16, 200, -3, '她的 1 月覺察', '--tape2')),
  dict(n='03', who='每年寫到三月的人', c='--tape3', h='年初買了新手帳，翻到四月就是空白', k1='寫在', v1='年計畫', k2='用來', v2='寫完一年',
       p='一個跨頁排好 <mark>12 個月</mark>，<br>翻開就知道<mark>自己走到哪了</mark>。', img='img/q4.jpg',
-      note=note('img/n_year.jpg', 14, 14, 214, -3, '這次，一路寫到 12 月', '--tape3')),
+      note=note('img/n_year.jpg', 226, 10, 196, 3, '這次，一路寫到 12 月', '--tape3')),
  dict(n='04', who='聖誕交換禮物', c='--tape4', h='預算一千，想送得精美又有心意', k1='附贈', v1='皮革手帳袋', k2='送給', v2='知心好友',
       p='扉頁寫上<mark>他的名字</mark>，<br>就是<mark>只給他的</mark>一本。', img='img/q4gift.jpg',
-      note=note('img/n_gift.jpg', 16, 150, 196, -3.5, '扉頁寫給他', '--tape4')),
+      note=note('img/n_gift.jpg', 236, 10, 180, 3.5, '扉頁寫給他', '--tape4')),
 ]
 def card(x):
     return f'''<div class="cd" style="--c:var({x["c"]})"><div class="ph" style="background-image:url({x["img"]})">{x["note"]}<div class="ov"><div class="no en">NO. {x["n"]}</div><div class="who">{x["who"]}</div><h3>{x["h"]}</h3></div></div>
@@ -144,7 +144,7 @@ body = f'''
   <div class="mv"><div class="tag"><i>GIFT BOX</i>純白禮盒</div><div class="ph" data-clip="f_open" style="background-image:url(gif/clips/f_open/001.jpg)"></div></div>
   <div class="inbox gridpaper"><span class="tape dot"></span><div class="t">盒子裡有什麼？</div>
     <ol><li><b>1</b>純白外盒</li><li><b>2</b>一張試筆紙</li><li><b>3</b>2027 手帳</li><li><b>4</b>皮革燙金手帳袋</li></ol>
-    <div class="bag"><div class="im"></div><div><div class="k">聖誕加碼</div><div class="v">送皮革燙金手帳袋</div><div class="s">手帳、筆、便利貼，<br>一起收好帶出門。</div></div></div>
+    <div class="bag"><div class="im"></div><div class="tx"><div><div class="k">聖誕加碼</div><div class="v">送皮革燙金手帳袋</div></div><div class="s">燙金 MEET MYSELF HERE，<br>手帳、筆、便利貼一起收好。</div></div></div>
   </div>
 </section>
 <section id="s03d" class="gift">

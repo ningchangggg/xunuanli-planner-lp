@@ -43,3 +43,7 @@
 2. `python3 gif/wipe.py gift` → `gif/clips/hw_gift/`；03c 的 `gif/clips/f_open/` 從原商品頁外盒 v3 的 MP4 裁 `crop=1542:1928:0:0,fps=10,scale=1080:1350`
 3. `python3 build_v11.py && python3 render.py out`（靜態區塊）
 4. `python3 gif/render_gif.py` → `gif/secframes/s03c、s03d` → ffmpeg 出 GIF（600 寬、10fps、160 色）和 MP4（1080 寬、crf 20）
+
+## 11/27 修改（阿寧看手機預覽）
+- 受眾卡 1–3（含 NO.04）紙條原則：**不要蓋到臉**。NO.01 紙條移到右上（頭髮右邊的牆）、NO.03 移到右上窗戶、NO.04 移到右上聖誕樹那側；NO.01 週計畫紙條裁窄讓字大一點。
+- 03c 皮革燙金手帳袋放大：改用丁丁 C0136（調色對齊麻豆）2.0 秒 4K 原畫面裁手帳袋（燙金字清楚），整欄寬大圖、說明放下方；取代原本 v10 的 bag.jpg 小縮圖。
