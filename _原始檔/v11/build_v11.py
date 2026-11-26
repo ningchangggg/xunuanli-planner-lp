@@ -11,7 +11,7 @@ EXTRA = r'''
   box-shadow:0 1px 2px rgba(0,0,0,.06)}
 .tape.dot{background-image:radial-gradient(rgba(255,255,255,.75) 1.4px,transparent 1.6px);background-size:7px 7px}
 .gridpaper{background-color:#FFFDF8;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:12px 12px}
-#s03{padding-bottom:0}#s03a{background:var(--paper2);padding:16px 0 26px}#s03 .cd:last-child{margin-bottom:10px!important}
+#s03{padding-bottom:0}#s03a{background:var(--paper2);padding:0 0 26px}
 #s03 .cd,#s03a .cd{margin-bottom:26px}#s03a .cd:last-child{margin-bottom:0}
 .cd .ov .who{border:0;font-size:26px;color:var(--ink);padding:3px 14px 2px;position:relative;margin:6px 0 2px -4px;transform:rotate(-1.5deg);letter-spacing:.12em}
 .cd .ov .who:before{content:"";position:absolute;inset:0;z-index:-1;background:var(--c,var(--tape));opacity:.95;
@@ -106,13 +106,13 @@ def note(src, x, y, w, rot, lb, c='--tape'):
 P = [
  dict(n='01', who='行程控上班族', c='--tape', h='開會、待辦、生活瑣事，都寫在同一頁', k1='寫在', v1='週計畫', k2='用來', v2='排行程',
       p='左頁<mark>排行程</mark>，右頁<mark>畫進度</mark>，<br>每打一個勾都<mark>好療癒</mark>。', img='img/q1.jpg',
-      note=note('img/n_week.jpg', 12, 12, 158, -3, '她的週計畫'),),
+      note='',),
  dict(n='02', who='想更懂自己的人', c='--tape2', h='每月覺察引導，<br>不只忙碌安排生活、也靜心傾聽自己', k1='寫在', v1='每月覺察', k2='用來', v2='認識自己',
       p='<mark>12 個自我覺察主題</mark>，<br>跟著提問寫，<mark>不怕不知道怎麼寫</mark>。', img='img/q2.jpg',
-      note=note('img/n_reflect.jpg', 164, 10, 258, 2.5, '她的 1 月覺察', '--tape2')),
+      note=''),
  dict(n='03', who='每年寫到三月的人', c='--tape3', h='年初買了新手帳，翻到四月就是空白', k1='寫在', v1='年計畫', k2='用來', v2='寫完一年',
       p='一個跨頁排好 <mark>12 個月</mark>，<br>翻開就知道<mark>自己走到哪了</mark>。', img='img/q4.jpg',
-      note=note('img/n_year.jpg', 60, 4, 322, -1.5, '這次，一路寫到 12 月', '--tape3')),
+      note=''),
  dict(n='04', who='聖誕交換禮物', c='--tape4', h='預算一千，想送得精美又有心意', k1='附贈', v1='皮革手帳袋', k2='送給', v2='知心好友',
       p='扉頁寫上<mark>他的名字</mark>，<br>就是<mark>只給他的</mark>一本。', img='img/q4gift.jpg', note=''),
 ]
